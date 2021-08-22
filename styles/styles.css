@@ -1,0 +1,313 @@
+html {
+  font-size: 62.5%;
+  font-family: "Assistant", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 0 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+section {
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section > div {
+  margin: 0 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  width: max-content;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 1px 30px 2px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s;
+}
+
+header h1 a {
+  margin: 0 1rem;
+  font-size: 2.5rem;
+}
+
+header nav {
+  padding: 0 1rem;
+}
+
+nav ul {
+  display: flex;
+  width: max-content;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 3rem 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  transition: all 0.5s;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*HOME*/
+
+#home img {
+  transition: all 0.5s ease-in;
+  width: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#home img:hover {
+  transform: scale(1.1);
+}
+
+.image {
+  width: max-content;
+  position: relative;
+}
+
+.socialNetworks {
+  transition: all 1s ease-in;
+  margin: 0 2rem;
+  top: 25%;
+  left: 40%;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  transform: translate(6rem);
+  opacity: 1;
+}
+
+.socialNetworks a {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.filter {
+  filter: blur(10px);
+}
+/*SKILLS*/
+
+#skills .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+#skills .content i {
+  font-size: 8rem;
+  margin: 0 2rem;
+}
+
+i {
+  transition: all 0.3s ease-in;
+}
+
+.fa-html5:hover {
+  color: #e34b21;
+}
+
+.fa-css3-alt:hover {
+  color: #0076bc;
+}
+
+.fa-js-square:hover {
+  color: #efda4d;
+}
+
+.fa-react:hover {
+  color: #61dafb;
+}
+
+.fa-node-js:hover {
+  color: #8ec84d;
+}
+
+@keyframes python {
+  from {
+    color: #3671a3;
+  }
+  50% {
+    color: #ffce42;
+  }
+  to {
+    color: #3671a3;
+  }
+}
+
+.fa-python:hover {
+  animation: 2s infinite python;
+}
+
+.fa-git:hover {
+  color: #3d2d00;
+}
+
+.fa-github:hover {
+  color: #24282e;
+}
+
+.fa-bootstrap:hover {
+  color: #5d3c7f;
+}
+
+/*CONTACT*/
+
+#contact .title {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .title a {
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input {
+  margin: 1rem 0;
+  font-size: 2rem;
+  width: 30rem;
+  border-color: black;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+form textarea {
+  margin: 1rem 0;
+  font-size: 2rem;
+  width: 50rem;
+  height: 25rem;
+  border-color: black;
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+form .button {
+  width: 50%;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+
+/*ARTICLE*/
+
+.articles {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 30px 2px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 45rem;
+  position: relative;
+  border-radius: 2rem;
+}
+
+article h5 {
+  margin: 2rem;
+}
+
+article p {
+  font-size: 1.6rem;
+}
+
+article a {
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+article a:hover {
+  transition: all 0.2s ease-in;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skills {
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.skills i {
+  margin: 0 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li {
+  margin: 1rem 2rem;
+}
+
+footer ul li a {
+  font-size: 2.5rem;
+}
