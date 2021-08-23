@@ -1,3 +1,5 @@
+/* HEADER HIDDEN WITH SCROLL */
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
@@ -8,6 +10,8 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+/* LINK CV ANIMATION */
 
 const cv = document.getElementById("cv");
 
@@ -23,6 +27,8 @@ function myStartFunction() {
 }
 
 myStartFunction();
+
+/* PROFILE PHOTO ANIMATION  */
 
 const profile = document.querySelector(".profile");
 const socialNetworks = document.querySelector(".socialNetworks");
@@ -41,3 +47,27 @@ const showSocial = () => {
 
 profile.addEventListener("click", showSocial);
 
+/* FORM */
+
+const $form = document.querySelector(".form");
+
+$form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  if (response.ok) {
+    this.reset();
+    const div = document.querySelector(".response");
+    const greeting =
+      '<p class="animate__animated animate__swing">Gracias por contactarme!</p>';
+    div.innerHTML = greeting;
+  }
+}

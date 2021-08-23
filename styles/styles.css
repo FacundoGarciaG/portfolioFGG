@@ -321,6 +321,15 @@ img {
   margin: 0 1rem;
 }
 
+/*FORM*/
+
+.response p {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
 /* FOOTER */
 
 footer {
