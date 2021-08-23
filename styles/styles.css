@@ -132,6 +132,34 @@ nav ul li a:hover {
 .filter {
   filter: blur(10px);
 }
+
+/*ABOUT*/
+
+#about .content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#about .content ul li {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.blinking-cursor {
+  font-size: 2rem;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
 /*SKILLS*/
 
 #skills .content {

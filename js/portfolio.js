@@ -40,4 +40,4 @@ const showSocial = () => {
 };
 
 profile.addEventListener("click", showSocial);
-//profile.addEventListener("mouseleave", showSocial);
+
