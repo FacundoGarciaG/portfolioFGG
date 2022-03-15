@@ -132,6 +132,10 @@ nav ul li a:hover {
   filter: blur(10px);
 }
 
+.badge-base {
+  margin-top: 3rem;
+}
+
 /*ABOUT*/
 
 #about .content ul {
