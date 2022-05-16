@@ -177,6 +177,11 @@ nav ul li a:hover {
   }
 }
 
+.animate__swing {
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
 /*SKILLS*/
 
 #skills .content {
