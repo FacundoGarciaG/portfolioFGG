@@ -106,7 +106,7 @@ nav ul li a:hover {
 /*HOME*/
 
 #home img {
-  transition: all 0.5s ease-in;
+  transition: all 5s ease;
   width: 50%;
   border-radius: 50%;
   cursor: pointer;
